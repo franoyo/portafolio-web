@@ -1,0 +1,671 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#c{
+    margin-right: 1%;
+}
+.navegation-bar{
+    width: 0vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: fixed;
+    justify-content:space-evenly;
+    transition: 0.5s;
+    z-index: 10;
+
+}
+.navegation-bar .division{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 18%;
+}
+.division .redes{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+width: 100%;
+height: 60%;
+
+overflow: hidden;
+
+}
+.division .put-exit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+
+    overflow: hidden;
+}
+.redes .red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:27%;
+    height: 50%;
+    transition: 0.5s;
+    font-size: 2vw;
+    color: white;
+}
+.red:hover{
+    transform: scale(1.2);
+}
+
+.navegation-bar .put-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: center;
+    width: 100%;
+    height: 40%;
+
+    
+}
+.put-buttons .navegation-buttons{
+    display: flex;
+    color: white;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(200,9,113,1) 50%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transform: scaleX(0);
+    font-size: 0vw;
+    cursor: pointer;
+    font-weight: 700;
+    animation: efecto 5s ease-in-out infinite;
+    background-size: 170% 170%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+@keyframes efecto {
+    0%{
+background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+        
+    }    
+}
+.landing-page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(7, 4, 43);
+    transition: 0.5s;
+}
+.landing-page .container-cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+
+
+}
+.container-cabecera .dic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    width: 10%;
+    height: 80%;
+
+}
+.container-cabecera .maindic{
+    display: flex;
+    width: 60%;
+    height: 80%;
+
+}
+.landing-page .linea{
+    display: flex;
+    width: 92.5%;
+    height: 0.6%;
+    border-radius: 15%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(200,9,113,1) 50%, rgba(0,0,0,1) 100%);
+    animation: efecto 5s ease-in-out infinite;
+    background-size: 170% 170%;
+}
+#cerrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 70%;
+    height: 70%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(200,9,113,1) 50%, rgba(0,0,0,1) 100%);
+    animation: efecto 5s ease-in-out infinite;
+    background-size: 170% 170%;
+    color: white;
+    cursor: pointer;
+    font-size: 1vw;
+    transition: 0.3s;
+}
+#cerrar:hover{
+transform: scale(1.1);
+border: solid rgb(158, 134, 0) 0.25vw;
+border-radius: 1vw;
+
+}
+.mostrar{
+    width: 8.5vw;
+}
+.mostrar .navegation-buttons{
+    transform: scaleX(1);
+    font-size: 1.1vw;
+
+}
+.mostrar .navegation-buttons:hover{
+    transform: translateX(3.2vw);
+    font-size: 1.3vw;
+}
+#logo{
+width: 85%;
+height: 75%;
+display: flex;
+background-color: black;
+border-radius: 50%;
+
+}
+#btn{
+    cursor: pointer;
+}
+.dic .next-info{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 38%;
+height: 75%;
+
+}
+.next-info .yija{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+  
+
+}
+.yija-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.flipped .yija-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  transform: rotateY(180deg);
+
+}
+
+.yija-front, .yija-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  background: radial-gradient(circle, rgba(22,12,130,1) 2%, rgba(35,19,212,1) 50%, rgba(22,12,130,1) 100%);
+  border: solid #3D3680 0.2vw;
+  color: white;
+  border-radius: 0.6vw;
+}
+
+.yija-back {
+
+  transform: rotateY(180deg);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  border: solid black 0.2vw;
+}
+.landing-page .home{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 89.4%;
+    background-color:rgb(7, 4, 43);
+    transition: 0.5s;
+   
+}
+.home .logo{
+    display: flex;
+    border-radius: 50%;
+    width:23.5%;
+    height: 50%;
+    background-color: cornflowerblue;
+}
+.home .texto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    height: 70%;
+    color: white;
+    transition: 0.5s;
+   
+}
+.texto .mainless{
+    display: flex;
+   margin-top: 3%;
+    font-size: 1.6vw;
+    align-items: center;
+    text-align: center;
+    width: 73%;
+    height: 12.5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+.texto .tex{
+    display: flex;
+   
+    font-size: 1.2vw;
+    align-items: center;
+    margin-top: 0.3%;
+    width: 73%;
+    height: 30%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+#conocer{
+    display: flex;
+    font-size: 1.2vw;
+    margin-top: 5.5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    height: 12.5%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(200,9,113,1) 50%, rgba(0,0,0,1) 100%);
+    animation: efecto 5s ease-in-out infinite;
+    background-size: 170% 170%;
+    color: white;
+    cursor: pointer;
+    
+}
+.landing-page .skills{
+display: flex;
+width: 0%;
+height: 89.4%;
+position: absolute;
+top:10.6% ;
+flex-direction: column;
+left: 0%;
+overflow: hidden;
+transition: 0.5s;
+background-color:rgb(7, 4, 43);
+
+}
+.skills .title{
+    display: flex;
+
+    width: 100%;
+    height:12.5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.8vw;
+    color: white;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.skills .container-tablas{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+    width: 100%;
+    height: 88.5%;
+}
+.container-tablas .tabla{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 47%;
+    background-color:#160C84;
+    border-radius: 2vw;
+    overflow: hidden;
+}
+
+.tabla .divs{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    color: white;
+    font-size: 1.6vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.tabla .sotial{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20%;
+    font-size: 1.4vw;
+    color: white;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sotial .put-logo{
+    display: flex;
+    width: 10%;
+    height: 95%;
+}
+.sotial .barra-medicion{
+    display: flex;
+    width: 70%;
+    height: 20%;
+    background-color: aqua;
+    border-radius: 0.5vw;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.barra-medicion:hover{
+    transform: scale(1.070);
+}
+.barra-medicion .porcentaje{
+    display: flex;
+    width: 99%;
+    height: 100%;
+    background-color: red;
+}
+#dos{
+    width: 80%;
+}
+#tres{
+    width: 85%;
+}
+.day-mode{
+    background-color: lightgray !important;
+}
+.font{
+    color: black !important;
+}
+.sobreponer{
+    z-index: 4 !important;
+    transition: 0.5s;
+}
+.maximizar{
+    width: 100% !important;
+}
+.minimizar{
+    width: 0% !important;
+}
+
+@media(orientation:portrait){
+    .navegation-bar{
+        width: 100vw;
+        height: 0vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        position: fixed;
+        justify-content:space-evenly;
+        transition: 0.5s;
+    }
+    .navegation-bar .division{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 20%;
+        }
+        .division .redes{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            height: 60%;
+            overflow: hidden;
+            
+            }
+            .division .put-exit{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 40%;
+            
+                overflow: hidden;
+            }
+            .redes .red{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width:27%;
+                height: 50%;
+                transition: 0.5s;
+                font-size: 2vh;
+                color: white;
+                border: solid 0.2vw black;
+            }
+            .red:hover{
+                transform: scale(1.2);
+            }
+            
+            .navegation-bar .put-buttons{
+                display: flex;
+                flex-direction: column;
+                align-items: center;justify-content: center;
+                width: 100%;
+                height: 40%;
+            
+                
+            }
+            .put-buttons .navegation-buttons{
+                display: flex;
+                color: white;
+                background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(200,9,113,1) 50%, rgba(0,0,0,1) 100%);
+                width: 100%;
+                height: 25%;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s;
+                transform: scaleX(0);
+                font-size: 0vw;
+                cursor: pointer;
+                font-weight: 700;
+                animation: efecto 5s ease-in-out infinite;
+                background-size: 170% 170%;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+            }
+            
+    .mostrar{
+        width: 100%;
+        height: 50%;
+        z-index: 5;
+    }
+    .mostrar .navegation-buttons{
+        transform: scaleX(1);
+        font-size: 1.5vh;
+    
+    }
+    .mostrar .navegation-buttons:hover{
+        transform: translateX(0);
+        font-size: 1.8vh;
+    }
+    #cerrar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 70%;
+        height: 70%;
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(200,9,113,1) 50%, rgba(0,0,0,1) 100%);
+        animation: efecto 5s ease-in-out infinite;
+        background-size: 170% 170%;
+        color: white;
+        cursor: pointer;
+        font-size: 1.4vh;
+    }
+    .landing-page{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color:rgb(7, 4, 43);
+    }
+    .landing-page .container-cabecera{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 10%;
+    
+    
+    }
+    .container-cabecera .dic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: 4.2vh;
+        width: 20%;
+        height: 80%;
+        
+    
+    }
+    .container-cabecera .maindic{
+        display: flex;
+        width: 60%;
+        height: 80%;
+    
+    }
+    .dic .next-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+        height: 60%;
+        
+        }
+        .next-info .yija{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            font-size: 2.5vh;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .landing-page .home{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content:space-evenly;
+            align-items: center;
+            width: 100%;
+            height: 89.4%;
+           
+        }
+        .home .logo{
+            display: flex;
+            border-radius: 50%;
+            width:35%;
+            height: 20%;
+            background-color: cornflowerblue;
+        }
+        .home .texto{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 95%;
+            height: 50%;
+            color: white;
+           
+        }
+        .texto .mainless{
+            display: flex;
+           margin-top: 3%;
+            font-size: 4vw;
+            align-items: center;
+            text-align: center;
+            width: 73%;
+            height: 12.5%;
+           
+        }
+        .texto .tex{
+            display: flex;
+           
+            font-size: 2.6vw;
+            align-items: center;
+            margin-top: 0.3%;
+            width: 73%;
+            height: 30%;
+        
+        
+        }
+        #conocer{
+            display: flex;
+            font-size: 3vw;
+            margin-top: 5.5%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 25%;
+            height: 12.5%;
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(200,9,113,1) 50%, rgba(0,0,0,1) 100%);
+            animation: efecto 5s ease-in-out infinite;
+            background-size: 170% 170%;
+            color: white;
+            cursor: pointer;
+            
+        }
+
+
+
+
+    
+
+
+}

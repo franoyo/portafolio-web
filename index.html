@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navegation-bar" id="nav-bar">
+        <div class="division">
+            <img id="logo" src="img/fotor-ai-20240710162514.jpg" alt="logo">
+        </div>
+        <nav class="put-buttons">
+            <button class="navegation-buttons" onclick="abrirSobreMi()">SOBRE MI</button>
+            <button class="navegation-buttons" onclick="abrirSkills()">HABILIDADES</button>
+            <button class="navegation-buttons">PROYECTOS</button>
+            <button class="navegation-buttons">CONTACTO</button>
+        </nav>
+        <div class="division">
+            <div class="redes">
+                <a class="red" href=""><i class="bi bi-facebook"></i></a>
+                <a class="red" href=""><i class="bi bi-github"></i></a>
+                <a class="red" href=""><i class="bi bi-youtube"></i></a>
+            </div>
+            <div class="put-exit">
+                <button id="cerrar" onclick="ocultarBarra()">CERRAR</button>
+            </div>
+        </div>
+    </nav>
+    <div class="landing-page" id="main">
+        <header class="container-cabecera">
+            <div class="dic"><i onclick="mostrarBarra()" id="btn" class="bi bi-list"></i></div>
+            <div class="maindic"></div>
+            <div class="dic">
+                <div class="next-info"><button id="yija" class="yija" onclick="darknessMode()"> 
+                    <div class="yija-inner">
+                        <div class="yija-front">
+                            <i class="bi bi-brightness-high-fill"></i>
+                        </div>
+                        <div class="yija-back">
+                            <i class="bi bi-moon-stars-fill"></i>
+                          
+                        </div>
+                      </div>
+                </button></div>
+            </div>
+        </header>
+        <div class="linea"></div>
+        <div class="home" id="casa">
+            <img class="logo" src="img/fotor-ai-20240710162514.jpg" alt="logo">
+            <div class="texto" id="text">
+                <div class="mainless">
+                    <p id="c">Hola mi nombre es</p><p>Francisco Oyola</p>
+                </div>
+                <div class="mainless">
+                    <p id="z">Soy Desarrollador Full Stack</p>
+                </div>
+                <div class="tex">
+                    Soy Desarrollador full stack, Me caracterizo por el diseño y la creacion de sitios web altamente personalizados ya sea por la parte de la interfaz grafica o ya sea tambien por
+                    las funcionalidades en base a las reglas de negocio de su empresa en base a sus necesidades, y mucho mas...
+                </div>
+                <button id="conocer" onclick="mostrarBarra()">Conocer Mas</button>
+            </div>
+        </div>
+        <div class=skills id="overMe">
+            <div class="title">
+                HABILIDADES
+            </div>
+            <div class="container-tablas">
+                <div class="tabla">
+                    <div class="divs">
+                        FRONTEND
+                    </div>
+                    <div class="sotial">
+                        <img class="put-logo" src="img/html_png-removebg-preview.png" alt="html5">
+                        <div class="barra-medicion">
+                            <div class="porcentaje"></div>
+                        </div>
+                        99%
+                    </div>
+                    <div class="sotial">
+                        <img class="put-logo" src="img/css-removebg-preview.png" alt="html5">
+                        <div class="barra-medicion">
+                            <div class="porcentaje"></div>
+                        </div>
+                        99%
+                    </div>
+                    <div class="sotial">
+                        <img class="put-logo" src="img/js-removebg-preview (1).png" alt="html5">
+                        <div class="barra-medicion">
+                            <div class="porcentaje" id="dos"></div>
+                        </div>
+                        80%
+                    </div>
+                    <div class="sotial">
+                        <img class="put-logo" src="img/bs-removebg-preview.png" alt="html5">
+                        <div class="barra-medicion">
+                            <div class="porcentaje" id="tres"></div>
+                        </div>
+                        85%
+                    </div>
+                </div>
+                <div class="tabla">
+                    <div class="divs">
+                        BACKEND
+                    </div>
+                </div>
+                <div class="tabla">
+                    <div class="divs">
+                        BASES DE DATOS
+                    </div>
+                </div>
+                <div class="tabla">
+                    <div class="divs">
+                        OTROS
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
