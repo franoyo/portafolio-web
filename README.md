@@ -82,7 +82,8 @@
 				}
 			</style>
 			<div class="container">
-				<h1>PORTAFOLIO WEB<h1>
+				<h1>Made with HTML &amp; CSS<br/>not an animated GIF</h1>
+				<p>Click to see the source</p>
 			</div>
 		</div>
 	</foreignObject>
